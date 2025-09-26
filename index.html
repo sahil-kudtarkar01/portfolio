@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -15,101 +14,120 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: "Inter", sans-serif;
     }
 
     body {
-      background: #f8f9fb;
-      color: #222;
+      font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+      background: #f4f6f9;
+      color: #2a2a2a;
       line-height: 1.6;
+      padding: 2rem;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 2rem;
     }
 
     header {
       text-align: center;
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
     }
 
     .profile-pic {
-      width: 120px;
-      height: 120px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid #0077b6;
+      border: 4px solid #1d3557;
       margin-bottom: 1rem;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
     }
 
     header h1 {
-      font-size: 2rem;
-      color: #023047;
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #1d3557;
+      margin-bottom: 0.5rem;
     }
 
     header p {
-      font-size: 1rem;
+      font-size: 1.05rem;
       color: #555;
+      max-width: 650px;
+      margin: 0 auto;
     }
 
-    /* Bento Grid */
+    /* Bento Grid Layout */
     .bento-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.8rem;
       max-width: 1200px;
       width: 100%;
     }
 
+    /* Card styling */
     .card {
       background: #fff;
-      border-radius: 12px;
-      padding: 1.5rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border-radius: 14px;
+      padding: 1.8rem;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
 
     .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+      transform: translateY(-6px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.12);
     }
 
     .card h2 {
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-      color: #0077b6;
+      font-size: 1.3rem;
+      margin-bottom: 1.2rem;
+      color: #1d3557;
+      border-left: 4px solid #457b9d;
+      padding-left: 0.6rem;
     }
 
     .card h3 {
-      font-size: 1rem;
+      font-size: 1.05rem;
       margin-top: 0.8rem;
-      color: #023047;
+      font-weight: 600;
+      color: #222;
     }
 
-    .card p, .card ul, .card li {
+    .card em {
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    .card p, .card li {
       font-size: 0.95rem;
-      color: #333;
+      color: #444;
     }
 
     .card ul {
       list-style: disc;
       padding-left: 1.2rem;
-      margin-top: 0.5rem;
+      margin-top: 0.4rem;
+    }
+
+    .card ul li {
+      margin-bottom: 0.4rem;
     }
 
     /* Contact Links */
     .contact a {
-      color: #0077b6;
+      color: #1d3557;
       text-decoration: none;
       font-weight: 500;
     }
 
     .contact a:hover {
+      color: #457b9d;
       text-decoration: underline;
     }
 
     footer {
-      margin-top: 2rem;
+      margin-top: 2.5rem;
       text-align: center;
       font-size: 0.85rem;
       color: #666;
@@ -121,7 +139,7 @@
   <header>
     <img src="profile.jpg" alt="Sahil Kudtarkar Product Manager Portfolio" class="profile-pic">
     <h1>Sahil Kudtarkar</h1>
-    <p>Associate Product Manager | Product Lifecycle | Agile | Data-driven Decision Making</p>
+    <p>Associate Product Manager specializing in product lifecycle, agile methodologies, and data-driven solutions for scalable marketplace growth.</p>
   </header>
 
   <!-- Bento Grid -->
@@ -130,7 +148,7 @@
     <!-- Summary -->
     <section class="card summary">
       <h2>About Me</h2>
-      <p>Associate Product Manager with expertise in product lifecycle, data-driven decision-making, and agile delivery. I specialize in scaling marketplace solutions, optimizing workflows, and increasing user engagement.</p>
+      <p>I’m an Associate Product Manager with a strong foundation in product lifecycle management and agile delivery. I have experience optimizing workflows, driving user engagement, and scaling marketplace solutions through data-driven decisions.</p>
     </section>
 
     <!-- Experience -->
@@ -144,7 +162,7 @@
           <li>Improved tutor-student matching accuracy by 22%.</li>
           <li>Reduced feature release cycle by 12% by streamlining agile processes.</li>
           <li>Launched multi-user institute accounts with role-based access.</li>
-          <li>Piloted subscription model for tutors improving response rates.</li>
+          <li>Piloted subscription model for tutors, improving engagement rates.</li>
         </ul>
       </div>
       <div>
@@ -152,7 +170,8 @@
         <p><em>2023</em></p>
         <ul>
           <li>Contributed to Engagekart, a WhatsApp-based CRM adopted by 200+ SMEs.</li>
-          <li>Designed workflows that reduced response time by 30%.</li>
+          <li>Designed messaging workflows that cut response time by 30%.</li>
+          <li>Ensured 95% on-time releases by coordinating with design and engineering teams.</li>
         </ul>
       </div>
     </section>
@@ -161,8 +180,8 @@
     <section class="card projects">
       <h2>Projects</h2>
       <ul>
-        <li><strong>Landpulse Agriculture Forecasting Platform</strong> – ML-based crop recommendation engine with 25% higher accuracy.</li>
-        <li><strong>Patient Management System</strong> – Appointment platform cutting manual scheduling by 60%.</li>
+        <li><strong>Landpulse Agriculture Forecasting Platform</strong> – Built ML-based crop recommendation engine with 25% higher accuracy. Piloted with 100+ farmers to promote sustainable farming.</li>
+        <li><strong>Patient Management System</strong> – Developed appointment scheduling platform, cutting manual work by 60% and increasing satisfaction by 18%.</li>
       </ul>
     </section>
 
@@ -170,7 +189,8 @@
     <section class="card education">
       <h2>Education</h2>
       <p><strong>B.E. Information Science</strong>, Canara Engineering College (2020–2024) – CGPA: 8.15</p>
-      <p>12th: 76% – Govt. PU College, Karwar | 10th: 88.64% – St. Joseph High School</p>
+      <p><strong>12th:</strong> 76% – Govt. PU College, Karwar</p>
+      <p><strong>10th:</strong> 88.64% – St. Joseph High School</p>
     </section>
 
     <!-- Skills -->
@@ -207,4 +227,5 @@
   </footer>
 </body>
 </html>
+
 
