@@ -15,7 +15,7 @@
   <meta property="og:image" content="profile.jpg">
   <meta property="og:url" content="https://yourdomain.com">
 
-  <!-- Schema Markup for SEO -->
+  <!-- Schema Markup  -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -27,13 +27,12 @@
       "https://www.linkedin.com/in/sahil-kudtarkar-19a11621b/"
     ],
     "email": "mailto:Sahilkudtarkar93@gmail.com",
-    "image": "sahil-kudtarkar.jpeg",
+    "image": "profile.jpg",
     "alumniOf": "Canara Engineering College"
   }
   </script>
 
   <style>
-    /* Global Reset */
     * {margin: 0; padding: 0; box-sizing: border-box;}
     body {
       font-family: "Inter", "Segoe UI", Roboto, sans-serif;
@@ -55,7 +54,24 @@
       box-shadow: 0 6px 16px rgba(0,0,0,0.1);
     }
     header h1 {font-size: 2.4rem; font-weight: 700; color: #1d3557; margin-bottom: 0.5rem;}
-    header p {font-size: 1.05rem; color: #555; max-width: 650px; margin: 0 auto;}
+    header p {font-size: 1.05rem; color: #555; max-width: 650px; margin: 0 auto 1rem;}
+
+    /* Download Button */
+    .download-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+      background: #1d3557;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .download-btn:hover {
+      background: #457b9d;
+    }
 
     /* Bento Grid */
     .bento-grid {
@@ -64,7 +80,6 @@
       gap: 1.8rem; max-width: 1200px; width: 100%;
     }
 
-    /* Card styling */
     .card {
       background: #fff;
       border-radius: 14px;
@@ -86,7 +101,6 @@
     .card ul {list-style: disc; padding-left: 1.2rem; margin-top: 0.4rem;}
     .card ul li {margin-bottom: 0.4rem;}
 
-    /* Contact */
     .contact a {color: #1d3557; text-decoration: none; font-weight: 500;}
     .contact a:hover {color: #457b9d; text-decoration: underline;}
 
@@ -96,9 +110,11 @@
 <body>
   <!-- Header -->
   <header>
-    <img src="sahil-kudtarkar.jpeg" alt="Sahil Kudtarkar Associate Product Manager Portfolio Photo" class="profile-pic">
+    <img src="profile.jpg" alt="Sahil Kudtarkar Associate Product Manager Portfolio Photo" class="profile-pic">
     <h1>Sahil Kudtarkar</h1>
     <p>Associate Product Manager specializing in <strong>product lifecycle management</strong>, <strong>agile methodologies</strong>, and <strong>data-driven solutions</strong> for scalable marketplace growth.</p>
+    <!-- Download Resume Button -->
+    <a href="Sahil_Kudtarkar_Resume.pdf" class="download-btn" download>📄 Download Resume</a>
   </header>
 
   <!-- Bento Grid -->
@@ -180,7 +196,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Sahil Kudtarkar</p>
+    <p>&copy; 2025 Sahil Kudtarkar. Optimized for SEO and professional networking.</p>
   </footer>
 </body>
 </html>
