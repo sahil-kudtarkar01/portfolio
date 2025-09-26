@@ -7,16 +7,120 @@
   <meta name="author" content="Sahil Kudtarkar">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sahil Kudtarkar | Product Manager Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
+
+    body {
+      background: #f8f9fb;
+      color: #222;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #0077b6;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #023047;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Bento Grid */
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+
+    .card h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: #0077b6;
+    }
+
+    .card h3 {
+      font-size: 1rem;
+      margin-top: 0.8rem;
+      color: #023047;
+    }
+
+    .card p, .card ul, .card li {
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    .card ul {
+      list-style: disc;
+      padding-left: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    /* Contact Links */
+    .contact a {
+      color: #0077b6;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
   <!-- Header -->
   <header>
-    <div class="profile">
-      <img src="profile.jpg" alt="Sahil Kudtarkar Product Manager Portfolio" class="profile-pic">
-      <h1>Sahil Kudtarkar</h1>
-      <p>Associate Product Manager | Product Lifecycle | Agile | Data-driven Decision Making</p>
-    </div>
+    <img src="profile.jpg" alt="Sahil Kudtarkar Product Manager Portfolio" class="profile-pic">
+    <h1>Sahil Kudtarkar</h1>
+    <p>Associate Product Manager | Product Lifecycle | Agile | Data-driven Decision Making</p>
   </header>
 
   <!-- Bento Grid -->
@@ -64,7 +168,7 @@
     <!-- Education -->
     <section class="card education">
       <h2>Education</h2>
-      <p>B.E. Information Science, Canara Engineering College (2020–2024) – CGPA: 8.15</p>
+      <p><strong>B.E. Information Science</strong>, Canara Engineering College (2020–2024) – CGPA: 8.15</p>
       <p>12th: 76% – Govt. PU College, Karwar | 10th: 88.64% – St. Joseph High School</p>
     </section>
 
@@ -102,3 +206,4 @@
   </footer>
 </body>
 </html>
+
